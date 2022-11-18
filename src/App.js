@@ -5,7 +5,7 @@ const API_URL = 'https://raw.githubusercontent.com/tabatkins/wordle-list/main/wo
 const WORD_LENGTH = 5
 
 export default function App() {
-  const [solution, setSolution] = useState('sneha');
+  const [solution, setSolution] = useState('');
   const [guesses, setGuesses] = useState(Array(6).fill(null))
   const [currentGuess, setCurrentGuess] = useState('');
   const [isGameOver, setGameOver] = useState(false);
@@ -64,7 +64,7 @@ export default function App() {
       const responseString = await response.text();
       const allWords = responseString.split(/\r?\n/);
       const randomWord = allWords[Math.floor(Math.random()*allWords.length)]
-      // setSolution(randomWord.toLowerCase());
+      setSolution(randomWord.toLowerCase());
       console.log(randomWord);
     }
     fetchWord();
