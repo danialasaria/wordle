@@ -1,1 +1,1 @@
-# Slightly Harder Wordle :)# snehaWordle
+# Slightly Harder Wordle :)
