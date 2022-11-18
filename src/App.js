@@ -65,7 +65,7 @@ export default function App() {
       const allWords = responseString.split(/\r?\n/);
       const randomWord = allWords[Math.floor(Math.random()*allWords.length)]
       setSolution(randomWord.toLowerCase());
-      console.log(solution);
+      console.log(randomWord);
     }
     fetchWord();
   }, []);
