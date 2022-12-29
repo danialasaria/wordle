@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
+
 .board {
   display: flex;
   flex-direction: column;
@@ -30,4 +32,15 @@
 
 .incorrect {
   background-color: lightgrey;
+}
+
+.directions {
+  padding-top: 20px;
+  font-family: Inter;
+  color: black;
+}
+
+.header {
+  font-family: Inter;
+  color: black;
 }

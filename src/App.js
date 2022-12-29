@@ -71,7 +71,7 @@ export default function App() {
   }, []);
   return (
     <div className="board">
-      <h1>Slightly Harder Wordle :)</h1>
+      <h1 className="header">Slightly Harder Wordle :)</h1>
       {
         //loop through all guesses and have each guess as input to a new line component
         guesses.map((guess,i) => {
@@ -87,6 +87,9 @@ export default function App() {
           );
         })
       }
+      <div className="directions">
+        Directions: Enter guesses via computer keyboard and see how you did by pressing enter/return 
+      </div>
     </div>
   );
 }
